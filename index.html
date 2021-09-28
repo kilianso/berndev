@@ -13,21 +13,36 @@
         padding: 2rem;
         margin: 0;
         box-sizing: border-box;
-        background: #E5E5E5;
-        color: #0F0F1B;
+        color: #E5E5E5;
+        background: #0F0F1B;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         font-family: sans-serif;
     }
-    .claim {
+
+    .content {
         text-align: center;
-        margin: 1em 0;
+        margin: 2rem 0;
+    }
+    
+    .logo {
+        max-width: 200px;
     }
 
-    .logo {
-        max-width: 250px;
+    .brand {
+        line-height: 1;
+        margin: 1em 0 0;
+    }
+    
+    .claim {
+        font-size: 1rem;
+        letter-spacing: 0.025em;
+        line-height: 1.15;
+        font-weight: normal;
+        text-align: center;
+        margin: 1em 0 2em;
     }
 
     .cta {
@@ -51,11 +66,14 @@
 
 </style>
 <body>
-    <img class="logo" src="logo.svg" alt="bärn.dev logo">
-    <h1 class="claim">A place to chat for developers in Bern.</h1>
+    <img class="logo" src="assets/logo.svg" alt="bärn.dev logo">
+    <div class="content">
+        <h1 class="brand">bärn.dev</h1>
+        <h2 class="claim">An online community for developers in Bern.</h2>
+    </div>
     <a href="https://discord.gg/8nrmxCHeCa" class="cta">
-        <img class="discord" src="discord.svg" alt="discord logo">
-        Join bärn.dev on discord
+        <img class="discord" src="assets/discord.svg" alt="discord logo">
+        Join us on Discord
     </a>
 </body>
 </html>
