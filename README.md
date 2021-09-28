@@ -1,2 +1,2 @@
-# berndev
-bärn.dev — development community
+# bärn.dev
+Development community in Bern🇨🇭
