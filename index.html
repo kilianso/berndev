@@ -20,7 +20,6 @@
 </head>
 <style>
     body {
-        position: fixed;
         width: 100%;
         height: 100%;
         padding: 2rem;
@@ -29,9 +28,8 @@
         color: #E5E5E5;
         background: #0F0F1B;
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
+        align-items: center;
         font-family: sans-serif;
     }
 
@@ -78,16 +76,39 @@
         margin-right: 1em;
     }
 
+    main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer {
+        margin-top: 2em;
+        letter-spacing: 0.025em;
+    }
+
+    a, a:hover, a:visited, a:active {
+        color: white;
+    }
+
 </style>
 <body>
-    <img class="logo" src="assets/logo.svg" alt="bärn.dev logo">
-    <div class="content">
-        <h1 class="brand">bärn.dev</h1>
-        <h2 class="claim">An online community for developers in Bern 🇨🇭</h2>
-    </div>
-    <a href="https://discord.gg/8nrmxCHeCa" class="cta">
-        <img class="discord" src="assets/discord.svg" alt="discord logo">
-        Join us on Discord
-    </a>
+    <main>
+        <img class="logo" src="assets/logo.svg" alt="bärn.dev logo">
+        <div class="content">
+            <h1 class="brand">bärn.dev</h1>
+            <h2 class="claim">An online community for developers in Bern 🇨🇭</h2>
+        </div>
+        <a href="https://discord.gg/8nrmxCHeCa" class="cta">
+            <img class="discord" src="assets/discord.svg" alt="discord logo">
+            Join us on Discord
+        </a>
+    </main>
+    <footer>
+        <small>
+            With ❤️ from <a href="https://mutoco.ch">mutoco</a>
+        </small>
+    </footer>
 </body>
 </html>
